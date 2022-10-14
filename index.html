@@ -1,251 +1,413 @@
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Personal Website</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Lanyue Fang</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/Photo-Lanyue Fang.jpg" alt="..." /></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Research</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#engexperience">Engineering</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                </ul>
-            </div>
-        </nav>
-        <!-- Page Content-->
-        <div class="container-fluid p-0">
-            <!-- About-->
-            <section class="resume-section" id="about">
-                <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        Lanyue
-                        <span class="text-primary">Fang</span>
-                    </h1>
-                    <p></p>
-                    <div class="subheading mb-5">
-                        Address: Cornell University, Ithaca, NY 14850<br>
-                        Github: <a href="github.com/luelueFLY">github.com/luelueFLY</a><br>
-                        <!-- Linkedin: <a href="https://www.linkedin.com/in/lanyue-fang-46071022b/">Linkedin Personal Page</a><br> -->
-                        Resume/CV:<a href="assets/Fang LY Resume_v2.pdf"> download</a>
-                    </div>
-                    <p class="lead mb-5">Hi, this is Lanyue Fang who always likes to explore more! 
-                        Lanyue is an ECE Meng student at Cornell University, interested in Robotics, 3D computer vision, Embedded Systems, etc. 
-                        Feel Free to attach me!
-                    </p>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-                </div>
-            </section>
-            <hr class="m-0" />
+    <title>GoBang for Fall21 ECE5725</title>
 
-            <!-- Education-->
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Cornell University</h3>
-                            <div class="subheading mb-3">Master of Engineering in Electrical and Computer Engineering</div>
-                            <div>GPA: 4.12/4.00</div>
-                            <div>
-                                Courses: <a href="https://lueluefly.github.io/ece5960-FastRobots/">Fast Robots (in progress)</a>, Autonomous Mobile Robots (in progress), 
-                                Computer Vision (A+), Design with Embedded Operating System (A)
-                            </div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2021 - December 2022</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Zhejiang University</h3>
-                            <div class="subheading mb-3">Bachelor of Engineering in Opto-Electronics Information Science and Engineering</div>
-                            <div>GPA: 3.90/4.00</div>
-                            <div>Outstanding graduate</div>
-                            <div>Selected to Intensive Training Program for Innovation and Entrepreneurship </div>
-                            <div>
-                                Courses: Physical Optics (96/100), Data Communication and Computer Networks (97/100), 
-                                Machine Vision and Image Processing (95/100), Digital Signal Processing (93/100), Optoelectronics (93/100)
-                            </div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">September 2017 - May 2021</span></div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
 
-            <!-- Experience-->
-            <section class="resume-section" id="experience">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Research Experience</h2>
-                    <div class="container">
-                        <div class="row">
-                            <!-- Point Cloud Registration -->
-                            <p>
-                                <div class="col-md">
-                                    <img class="img-fluid img centered" src="assets/img/point cloud.png" alt="">
-                                </div>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
 
-                                <div class="col-md">
-                                    <h3> Point Cloud Registration </h3>
-                                    <p></p>
-                                    <div class="lead mb-5">
-                                        ● Applied point cloud registration algorithms, including Normal Distribution Transform (NDT), Iterative Closest Point (ICP) 
-                                        and it’s variants to dynamic models
-                                    <p></p>
-                                    
-                                        ● Compared and analyzed the algorithms in terms of convergence speed and registration angle error, using the standard point cloud 
-                                        in the Stanford University point cloud library as a static model
-                                    </div>
-                                </div>
-                            </p>
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
 
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- <script src="../../assets/js/ie-emulation-modes-warning.js"></script> -->
 
-                            <p></p>
-                            <p></p>
-                            <p></p>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
 
+  <body>
 
-                            <!-- Fast Identification of Targets in Super Remote Sensing Satellite Images -->
-                            <p>
-                                <div class="col-md">
-                                    <img class="img-fluid img centered" src="assets/img/srtp.jpg" alt="">
-                                </div>
-
-                                <div class="col-md">
-                                    <h3> Satellite Image Processing and Target Identification </h3>
-                                    <p></p>
-                                    <div class="lead mb-5">
-                                        ● Built and trained a back-propagation neural network with Matlab that could automatically identify aircraft targets in satellite 
-                                        images by scanning images with 75% accuracy<br>
-                                        <p></p>
-                                        ● Applied algorithms of interpolating missing color components at the output of Bayer color array, including Bilinear, 
-                                        Hamilton, Hibbard, Lu, and Kimmel algorithms; systematically evaluated the demosaicking speed and performance
-                                        <p></p>
-                                        ● Implemented a luma-chroma demultiplexing algorithm using a least-squares design methodology for the required bandpass filters. 
-                                        Improved the demosaicking performance and calculation speed by more than 60 times that of the commonly used Bilinear 
-                                        algorithm
-                                        <p></p>
-                                        ● Project achieved highest national level by the Student Research Training Program
-                                    </div>
-                                </div>
-                            </p>
-
-
-                        </div>
-                    </div>
-                      
-                </div>
-            </section>
-            <hr class="m-0" />
-
-
-
-
-            <!-- Engineering Experience-->
-            <section class="resume-section" id="engexperience">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Engineering Experience</h2>
-                    <div class="container">
-                        <div class="row">
-
-                            <!-- Fast Robot -->
-                            <p>
-                                <div class="col-md">
-                                    <img class="img-fluid img centered" src="assets/img/fast robot.png" alt="">
-                                </div>
-
-                                <div class="col-md">
-                                    <h3> Fast Robot </h3>
-                                    <p></p>
-                                    <div class="lead mb-5">
-                                        ● Achieved the drift stunt with orientation and distance proportional-integral-derivative(PID) controller: Robot firstly drives fast forward, and initiates a 180-degree turn with drift 
-                                        when distance from wall is less than 0.6m, then starts driving backward
-                                        <p></p>
-                                        ● Implemented Kalman Filter on robot to increase measurement frequency and got a faster controller
-                                        <p></p>
-                                        ● Built up a map of a static room with a ToF sensor first, and then used Bayes Filter for the localization
-                                        <p></p>
-                                        ● Explore more on my <a href="https://lueluefly.github.io/ece5960-FastRobots/">Fast Robots website</a>
-                                    </div>
-                                </div>
-                            </p>
-
-                            <!-- Gomoku Game Machine,-->
-                            <p>
-                                <div class="col-md">
-                                    <img class="img-fluid img centered" src="assets/img/gomoku.jpg" alt="">
-                                </div>
-
-                                <div class="col-md">
-                                    <h3> Gomoku Game Machine </h3>
-                                    <p></p>
-                                    <div class="lead mb-5">
-                                        ● Created a Gomoku machine with high win rate
-                                        <p></p>
-                                        ● Implemented min-max search tree and alpha-beta pruning algorithms to generate the next step for the machine
-                                        <p></p>
-                                        ● Executed proportional-integral-derivative(PID) control loop to guide the movements of stepper motors
-                                        <p></p>
-                                        ● Established a closed-loop control for the robot arm moving, using a mark point to track trajectories and calibrating positions; the 
-                                        robot can put the stones accurately, less than 1mm error
-                                        <p></p>
-                                    </div>
-                                </div>
-                            </p>
-
-
-                           
-
-
-                        </div>
-                    </div>
-                    
-                </div>
-            </section>
-            <hr class="m-0" />
-
-
-
-            
-            
-            <!-- Skills-->
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <p class="lead mb-5">
-                        <strong>Programming:</strong> C, C++, assembly language, MATLAB<br>
-                        <strong>Simulation:</strong> Zemax, OptiSystem, Multisim<br>
-                        <strong>Circuit Design:</strong> Altium Designer<br>
-                        <strong>3D modeling:</strong> Solidworks<br>
-                    </p>
-                    
-                </div>
-            </section>
-            <hr class="m-0" />
-
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">GoBang</a>
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#obj">Project Objective</a></li>
+            <li><a href="#intro">Introduction</a></li>
+            
+            <li><a href="#design">Design</a></li>
+            <li><a href="#Result">Result</a></li>
+            <li><a href="#Conclusions">Conclusions</a></li>
+            <li><a href="#Future_work">Future</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="starter-template">
+        <h1>GoBang (Five in a row)</h1>
+        <p class="lead">A kind of board game project<br>By Jingkai Zhang (jz544) & Lanyue Fang (lf355).</p>
+      </div>
+
+      <hr>
+      <div class="center-block">
+          <iframe width="640" height="360" src="https://www.youtube.com/embed/FY5OpKezfbc" frameborder="0" allowfullscreen></iframe>
+          <h4 style="text-align:center;">Demonstration Video</h4>
+      </div>
+
+      
+      <hr id='obj'>
+      
+      <div class="row">
+        <div class="col-md-4" style="text-align:center;">
+        <img src="figures/gomoku.jpg" alt="gomuku" width="240" height="240">
+        </div>
+        <div class="col-md-8" style="font-size:18px;">
+        <h4> </h4>
+        <h2>Project Objective:</h2>
+        <ul>
+          GoBang is an easy but interesting chess game, it is uneasy to find someone to play with you, either your friends are busy or his/her skills are not as good as yours. Although a lot of virtual online GoBang games are available on the Internet, they can only be displayed on the screen and cannot provide the feeling of touching the chess pieces, which is also a vital part of playing chess. Therefore, our aim is to combine the software with hardware, so that people can not only play chess on the real chessboard with the real chess pieces but also play with a powerful AI that never gets tired. In addition, people can also practice their chess skills and prepare for the chess match.
+            <!-- <li>some important objectives.some important objectives.some important objectives.some important objectives.</li>
+              <li>some other important objectives.</li>
+          <li>some not-that-important objectives.</li> -->
+        </ul>
+        </div>
+        <hr id="intro">
+    </div>
+      
+      <div style="text-align:left;">
+      		  <h3> </h3>
+<h2>Introduction</h2>
+              <p style="text-align: left;">
+                GoBang is also named Gomoku, five in a row. This board game looks like Go but the rule of it is much easier since it does not require any additional movements, the only thing that can trigger the end of the game is that one of the sides (white or black) owns five continual connected stones, as shown in the figure below. Because of its easy rules, this game is popular around the world, from normal recreation to professional world’s match. People can play it not only on a real board but also on a piece of paper with a pencil. Researchers used well-designed algorithms and powerful computers to explore the GoBang even further, they found that the first player has a higher win rate. In 1994, L. Victor Allis proved that the first player can always win on a 15x15 board[1]. 
+        </p>
+              <img src="figures/GoBang_rules.png" width="600" height="200">
+      </div>
+      
+    
+
+  
+
+    <hr id='design'>
+
+      <div style="text-align:left;">
+              <h2>Design and Testing</h2>
+<h3>Hardware Design</h3>
+              <p style="text-align: left;">The physical design of the GoBang is a three-axis movable frame. Here are some photos.<br>
+          <img src="figures/frame01.jpg" width="200" height="250">
+          <img src="figures/frame02.jpg" width="200" height="250">
+          <img src="figures/frame03.jpg" width="300" height="250">
+          <br>
+        <h4> </h4>
+                <p>For this, we adopted the <a href="https://courses.ece.cornell.edu/ece5990/ECE5725_Fall2019_Projects/Dec_12_Demo/RPi%20Drawing/kw573_zy393_Monday/index.html">RPi Printer</a> built by Kaichen Wei(kw573) Neo Yuan(zy393) in 2019 Fall as our basic frame. A Pi Camera is mounted on the top and an air pump is equipped to suck the chess. The machine broadly consists of the following parts: a Raspberry Pi with the PiTFT, a Pi Camera, 5 stepper motors, an air pump, breadboard circuit with pump driver, and a wooden chassis with chessboard. 
+                <br><br>
+                The motor is named 28BYJ-48 - 5V Stepper Motor. There are five motors in total, two for each of x and y axis, one for z axis. Each motor is connected to a driver with four wires to transmit the pulse and thus each axis requires 4 GPIO Pins to control the direction. The GPIO connection is consistent with the previous RPi Printer project. You can check their website for details.
+                <br><br>
+                The air pump is supplied by +5V power and controlled by the TB6612FNG motor driver, the one we used in Lab 3. We set the AIN1 and AIN1 to a fixed value of 3.3V and ground respectively. The PWMA channel of the driver is connected to GPIO 26 on the Raspberry Pi to run the pump. 50 Hz frequency and 50% duty cycle are used. A suction cap is attached at the end of the silicone tubing to increase the contact area with the go stone. 
+</p>
+                </p>
+                <p><img src="figures/circuit_aa.png" width="500" height="500">
+                  
+                </p>
+              <h5>&nbsp;</h5>
+        <h3>Software Implementation</h3>
+              <h6>&nbsp;</h6>
+              <h4> <strong>■ GUI implementation</strong></h4>
+              <p style="text-align: left; 0px 30px;">The game GUI is implemented with pygame library, and we also used some useful libraries that were developed in ECE5725 Lab3 such as button class, caption class to reduce our workload. The code can be found in the project file ECE5725-Final-Project/GoBang/, which is available on GitHub, see the link in Code Appendix. The image materials that we used were in the “resources” file, including the title image, black and white chess stone. Note that the chess stone was created by using the drawing tool from Windows, and the title with the special font was generated by using the online website https://www.qt86.com/. Figure below shows the game GUI of GoBang for this project. </p>
+        <p style="text-align: left; 0px 30px;">Here is the structure for this GUI.
+              </p>
+                <p><img src="figures/game_GUI.png" width="500" height="450">
+                <br>
+                
+                </p>
+                <p>-resources (folder)<br>
+                  -black.png          #black stone display image<br>
+                  -gobang_title.png    # GUI title “GoBang for ECE5725”<br>
+                  -white.png          #white stone display image <br>
+                  <br>
+                -Config.py<br>
+                This file sets all parameters of the GUI, including width, height, cell size, margin, etc.<br>
+                -gobang_AI.py<br>
+                  Implementation of AI<br>
+                -GUI.py<br>
+                <br>
+                Caption  # the caption class which configures a caption in pygame display<br>
+                -__init__: initializes the position, font, text content of the caption<br>
+                -display: display the caption on the screen <br>
+                -change_text: change the text content of the caption <br><br>
+                
+                Button  # the button class which configures a button in the pygame display<br>
+                -__init__: initializes the position, font, text content of the button<br>
+                -change_color: change the background color of the button <br>
+                -add_call_func: add a callback function for the button<br>
+                -display: display the button on the display<br>
+                -is_on_button: check if the mouse is on the button <br><br>
+                
+                GoBang_GUI # the GUI class that sets all the elements in the game <br>
+                -__init__: load all the resources and elements in the screen display<br>
+                -read_chessboard: get the latest value of identify_finished_flag<br>
+                -draw_pieces: draw all chess stones on the display<br>
+                -refresh: refresh the display <br>
+                -mouse_on_button: check if the mouse is on the button <br>
+                -mouse_click: deal with the action after mouse clicked on chessboard and buttons<br>
+                -Human: update information related to the black stone <br>
+                -Robot: update information related to the white stone <br>
+                  -draw_text: display the text on the screen <br>
+                  -run: start to run the GUI<br><br>
+                
+                -log.py<br>
+                  Logging system<br><br>
+                
+                -Rules.py<br>
+                  -win_judgement: judge if the human or robot win<br>
+        <p>&nbsp;</p>
+        <h4><strong>■ How does AI generate the new step?</strong></h4>  
+              <p style="text-align: left; 0px 30px;">
+                The approach we used is named the min-max search tree.
+                <br>
+                <img src="figures/min_max_search_tree_png.png" width="600" height="350" alt>
+                <br>
+        </p>
+                <p>As demonstrated in the figure, the rectangle represents the black piece and the triangle stands for the white piece. We will take the black color as an example. Every step can be expressed as a layer, for example, the number of possible steps for the white piece in layer two is 8, however, only two cases were shown in the figure. All possible steps will be considered from up to down. For the layer with the rectangle, the algorithm should consider the best step for black, for instance, the step that can connect more black pieces will obtain higher scores. Each step will be evaluated and a score will be given. When it turns to the white turn, the algorithm will consider the step that achieves the lowest step for black. This process will keep rotating until all the steps are traversed. After that, the total score for each branch will be calculated, and the maximum score for black will be selected to generate the new step. <br><br>
+                However, the biggest problem with this approach is that the computation quantity grows exponentially once the depth of the tree grows linearly. For Raspberry Pi 4B, if we set depth as 3 for an 18x18 size chessboard, it would take more than 5 minutes to generate a single step, which is too slow. But our demo chessboard only has 9x9 size, depth 3 can still respond in a few seconds. One way to reduce the useless computation is to imply alpha-beta pruning, the basic idea of it is expressed in the figure below.                </p>
+<p><br>
+                  
+                  <img src="figures/AB_pruning.svg" width="600" height="300" alt>
+                  <br>
+                </p>
+                
+                <p>&nbsp;</p>
+        <p>For the search tree, the default order is from left to right. Take the gray 5 in the last line as an example, we first search the left subtree that contains 5 and 6; 5 will be selected since this is the “min” layer, and the upper MAX layer will temporarily set as 5; Now turn to the right subtree that includes 7,4,5; 7 will be first assigned to the MIN layer, which means the value in this MIN layer will be less than or equal to 7; when it comes to 4, the value of MIN layer is updated since 4 is smaller than 7, and the value of the MIN layer will be less than or equal to 4; Now we know that the MAX layer need to find a greater value between 5 and right subtree, the value of right subtree is less or equal to 4, which is definitely smaller than 5, therefore, there is no need to verify the third subtree at the bottom[2].        
+        <h4>&nbsp;</h4>
+        <h4><strong>■ Communication between two programs</strong></h4>
+              <p style="text-align: left; 0px 30px;">
+                In our project, the game GUI and the physical control program are separated, in other words, 2 Python programs are running simultaneously. In the beginning, we tried the multi-process and multi-thread Python library, both of them can run GUI and physical control in a single program, however, the speed is slowed down. A noticeable bigger delay occurs in camera preview shows that multi-process is not suitable for 2 real-time tasks which all include a while loop. We suspect it may be different by running 2 tasks in a single program with multi-process and running 2 tasks in 2 console windows, the CPU dispatch methods should be different, the latter one shall achieve a faster response. 
+                <br><br>
+                So, what can we do, if two tasks share some common variables, but requires a fast real-time response at the same time? Our idea is to build the communication channel between 2 running programs to read or write the variables, and each program starts a thread or timer interrupt to update the variables in the file. Here, we recommend using either “.json” or “.pickle” type files, this is because both of the types are able to save tuple, dictionary, and any other common variable types. The advantage of “.json” is that this type is also supported by other languages, which means it has better compatibility; while “.pickle” is only supported by Python, however, you can even save class and function in this kind of file, which is unavailable in “.json”.
+                <br><br>
+                Next, two basic operations, read and write are implemented by the following function. The example is based on Python and “.json”, but for other types of files such as “.txt”, the code is almost the same .
+                <br>
+ <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%;text-align:left"><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">json</span>
+
+<span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">read</span>(file_name):
+    <span style="color: #008000; font-weight: bold">with</span> <span style="color: #008000">open</span>(file_name,<span style="color: #BA2121">&#39;r&#39;</span>) <span style="color: #008000; font-weight: bold">as</span> json_file_handle:
+    info <span style="color: #666666">=</span> json<span style="color: #666666">.</span>load(json_file_handle)
+    <span style="color: #008000; font-weight: bold">return</span> info
+
+<span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">write</span>(file_name,key,value):
+    cur_info <span style="color: #666666">=</span> read(file_name)
+    cur_info[key] <span style="color: #666666">=</span> value
+
+    <span style="color: #008000; font-weight: bold">with</span> <span style="color: #008000">open</span>(file_name,<span style="color: #BA2121">&#39;w&#39;</span>) <span style="color: #008000; font-weight: bold">as</span> json_file_handle:
+        new_info <span style="color: #666666">=</span> json<span style="color: #666666">.</span>dumps(cur_info)
+        json_file_handle<span style="color: #666666">.</span>write(new_info)
+</pre></div>
+<h4> </h4>
+<p>The code shows how to read or change a Python dictionary. </p>
+<p><br>
+  However, we also encountered a problem that occasionally happens. When the file is being written by program A, program B starts to read the content, the error will occur, it’s called json.decoder.JSONDecodeError. The reason for this error is that the action write will first clear the content of the file, and then add the new information to it. The write action will take some time so the file remains empty for a few time periods, which causes the error for reading at this time. A quick solution would be using the “try-except” struct in Python to resolve this problem, the sample code is as follow.
+</p>
+<h5> </h5>
+<!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%;text-align:left"><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">json</span>
+
+<span style="color: #008000; font-weight: bold">try</span>:
+    read() <span style="color: #408080; font-style: italic"># read the json file </span>
+
+<span style="color: #008000; font-weight: bold">except</span> json<span style="color: #666666">.</span>decoder<span style="color: #666666">.</span>JSONDecodeError:                             
+    <span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&quot;reading error, program will read again&quot;</span>)
+</pre></div>
+<h4>&nbsp;</h4>
+<h4><strong>■ How to put the go stone accurately?</strong></h4>
+        <p style="text-align:left">
+          One of the challenges that we met was how to reduce the position error generated by the step motors. Unlike the servo motor or other advanced motors that have integrated closed-loop control or feedback encoders, the step motors we used do not provide either of them.<br>
+          <img src="figures/open_loop.svg" width="600" height="220" alt>
+        <br>                
+<p style="text-align:left">The tme that the step motor runs will be calculated and directly input to it, this open-loop control strategy might work in the first few times, but soon the error will accumulate. Since the motor needs to move a lot of times to place the chess stone in the corresponding position, the error will be too big, and the chess stone will be wrongly placed on the chessboard. Besides, the wrong position of the chess stone also affects the other chess stones that have already been in their correct place, which causes problems in chess identification.           
+          <p style="text-align:left"><br>
+        Therefore, we decided to apply closed-loop control to the step motor so that higher accuracy could be achieved.
+        <h4>&nbsp;</h4>
+        <h4>Red Circle Track:</h4>
+        
+            <p>What we did first was to install a pi camera on the top of the chessboard to watch everything, and a red dot was put above the picker so that we can locate its position in real-time by identifying the coordinate of the red circle center. <br><br>
+              Images are changed into the HSV (for hue, saturation, and value) color space first to segment the red region and then Circle Hough Transform (CHT) is used to get the circle center position. However, light and shadow can easily influence the result. A tricky problem we encountered is that the surface of the red circle is smooth and can reflect the light. When we transfer it into the gray image, the area that reflects light can always be regarded as white, which makes CHT hard to detect the circle.  </p>
+            <p><br>
+              <img src="figures/red_circle.jpg" width="300" height="400" alt>            </p>
+            <p>&nbsp;</p>
+<p>We tested different kinds of prototypes as shown below, and we found that the rough surface is extremely important since it will diffuse reflect the light. Besides, we found that the white background is also essential. The detection result becomes more stable with a white background because it offers a higher contrast ratio.</p>
+        <p><br>
+          <img src="figures/previous_version_red_circle.jpg" width="400" height="300" alt>        </p>
+        <p><br>
+          Our final plan is like this. A pi camera adjuster combined with a white paper with a red circle already drawn on it. Our test shows that this achieved the best detection performance.  Morphological filtering opening, first erosion, and then dilation is also used to remove the noises. 
+          Here is a figure that compares the identification result on our final version (on the left) and the previous version (on the right). It could be seen that our final version can be better detected as a circle.        </p>
+        <p><br>
+          <img src="figures/Final_version_red_circle.jpg" width="400" height="300" alt>
+          <img src="figures/red_region.png" width="300" height="300" alt>
+          <br>
+        </p>
+
+  <h4>&nbsp;</h4>
+  <h4>Calibration Strategy:</h4>
+          Our calibration strategy can be divided into two aspects: (1) Make fine adjustments at the target location so that the go piece can fall in the center of the chessboard grid. (2) Go back to the origin after each pickup and calibrate the position to prevent error accumulation. Therefore, the origin position and all 81 grid center positions should be stored in the initialization. However, given that the red circle is kind of big and near to the camera, it will go outside the transformed image in some specific places. To be specific, when the sucker is above the first two columns or the last row, the red circle is unable to be detected. For those points, calibrations will be done at the transition points first, then the motor will move one or two blocks to reach the target position. For example, to get the (1,3), motors will go to (3,3) first, calibrate, and then x-axis will move 2 blocks to reach the (1,3).            
+        <br>
+          <img src="figures/transition.png" width="800" height="450" alt>
+                <br>
+        <h4>PID control with picker:</h4>
+          <p>We set the error threshold as 1.5 pixels. Hence, it is necessary to do several calibrations. To make the motor move smoothly, proportional-integral-derivative control (PID for short), is used in the calibration stage. <br><br>
+            We do not include full PID control since we do not know the transfer function of the step motor. Besides, the test results indicated that P control is accurate enough. The P (proportion) control system is designed as follows. To explain it, the r(t) is the target position that we want it to reach, e(t) is the error calculated from the target value and actual value; K_p is the proportion control parameter, and u(t) is the output running time that is assigned to the step motor; y(t) is the actual position.  
+          </p>
+        <p><br>
+            <img src="figures/pid.svg" width="660" height="250" alt>
+            <br>
+            
+        </p>
+            
+          </p>
+       <h4><strong>■ Flow chart of the program</strong></h4>
+         <p style="text-align:left">
+          For our Gobang game, human players are going to play black first and press the button to tell he/she has finished. Once the button is pressed, the pi camera will take a picture to identify the new black piece. Our AI algorithm is able to calculate the best step for white in seconds. After that, the air pump will pick up a white stone and take it to the target position. Motors will adjust serval times to locate the piece more accurately. The flow chart of our program is shown as follows.
+         </p>
+        <img src="figures/Gobang flow chart.svg" width="800" height="600" alt>
+                <br>
+         <h4>&nbsp;</h4>
+        <h4><strong>■ Logging System</strong></h4>
+         <p style="text-align:left">
+          Our mini logging system is implemented by using “datetime”, “os”, library. The code can be found in the project GitHub link, ECE5725-Final-Project/log.py. The logging has 5 levels, namely, debug, info, warning, error, critical. In our project, the general information such as the new step is detected and the picker has moved to the destination use the info level; the debug level is used to print information like the position of the red circle; the error level can be used to indicate that file reading failed; if the pi camera fails to open, the critical level will be used. By categorizing logging information into several levels, we know whether the system is working fine or any fatal error happens. Here is the logging generated from demonstrating the system, it can also be found in the “logging” folder.
+          <br><br>
+          2021-12-12 14:06:54.393652 [INFO] logging saved in ./logging/2021-12-12_system.log
+          <br>
+          2021-12-12 14:06:54.395319 [INFO] GoBang starts now
+          <br>
+          2021-12-12 14:06:54.432027 [INFO] Hardware has been initialized successfully.
+          <br>
+          2021-12-12 14:06:54.434840 [INFO] calibration points have been loaded
+          <br>
+          2021-12-12 14:06:54.446855 [INFO] Control flags has been initialized
+          <br>
+          2021-12-12 14:06:54.482595 [INFO] Start the flag reading timer
+          <br>
+          2021-12-12 14:06:54.484239 [INFO] Waiting for human to place chess stone
+          
+        </p>
+         
+      <hr id='Result'>
+      </div>
+
+      <div style="text-align:left;">
+        <h5>&nbsp;</h5>
+        <h2>Result</h2>
+<p style="text-align: left; 0px 30px;">
+                In our demo, our initial objective is achieved very well, the machine can identify what exactly a human puts on the board with the accurate result and fast response; the step will be recorded and understood by AI to generate the new steps, then the plant can successfully pick up a go piece and move to its destination with relatively accurate correction and calibration. During our test, the AI performs well and can always generate defensive steps to prevent us win. The game GUI looks fancy and all the buttons on it worked, GUI is capable of displaying the board and the go pieces, and also showing the order of each step. Our improved red circle is easy to be detected by using Holf transform, and the moving strategy to deal with the situation when the red circle is out of region worked well. In terms of AI, we found that the speed boosts exponentially if the size of the board mitigates (from 18x18 to 9x9). Also, the alpha-beta cutting strategy can reduce up to 50% calculation time, but it improves very little when the board is small (9x9). However, we also find that the z-axis performs not stable enough, sometimes it performs the idle rotation, resulting in the fact that the suction cup is not close to the go piece or the lifting height is not higher enough. These failure cases happen occasionally, we need to correct them manually in order not to influence the other go pieces. 
+              </p>
+      </div>
+
+    <hr id='Conclusions'>
+
+      <div style="text-align:left;">
+              <h5>&nbsp;</h5>
+              <h2>Conclusions</h2>
+              <p style="text-align: left;0px 30px;">
+                During our project, we encountered a lot of hardware and software problems and bugs, and most of them are fixed. In terms of circle detection using OpenCV, we recommend using the color red, blue, or green, because these colors are easy to filter out by transferring BGR images into HSL or HSV and setting a suitable threshold. Another important tip is to make the surface of the circle as rough as possible since the light can be reflected if the surface is smooth, once the light from the lab or environment is reflected too much, the circle will contain a small white area which causes trouble for detecting circle. Also, try to add a white background or any other pure color background for the circle, this would help to filter out the noise and enhance the contrast rate. For step motor control, feedback control is more smooth and accurate than open-loop control. However, the step motor we used does not provide encoder feedback, thus we use the camera to detect the position of the red circle, and compared it with the ideal position to obtain the error. This is accurate enough for playing the board game, but not enough for tasks that require a lower deviation. If the task requires higher accuracy, we would recommend using servo motors instead. Besides, we also found that the machine learning method in playing GoBang may not achieve better performance over the traditional method. The machine learning method requires a well-designed model and massive training, which is more suitable for someone who has experience in it. Last, a system that has over 1000 thousand line codes needs a log system to record the information when running it, it would be useful to locate the bug and solve it.
+              </p>
+      </div>
+
+    <hr id='Future_work'>
+
+      <div style="text-align:left;">
+              <h5>&nbsp;</h5>
+              <h2>Future work</h2>
+              <p style="text-align: left;">
+                As described in the result, our current system works fine and can play with humans very well. But there still exist some problems or improvements that can be done in the future. The z-axis is not working well, it often does idle rotation because the gear bite is not strong enough. Therefore, the z-axis could be improved by using different lifting and declining approaches since the step motor combined with a belt attached to a pencil is not smooth enough, sometimes it can even be stuck. Besides, the current system still requires humans to place a white piece on the calibration point, which is not cool enough. In the future, we hope it can automatically pick up a go piece from the piece pool, human action is no longer involved. For AI, machine learning can be used to enhance AI’s ability, so it will be more challenging and interesting. In addition, the game can be online so that we can play with friends as if your friend is sitting in front of you picking up go pieces.
+              </p>
+      </div>
+
+    <hr>
+
+    <div class="row" style="text-align:left;">
+          <h2>Work Distribution</h2>
+          <div style="text-align:left;">
+              <img class="img-rounded" src="figures/photo_two_people.jpg" alt="Generic placeholder image" style="width:80%;">
+              <h4>Project group picture</h4>
+          </div>
+      <div class="col-md-6" style="font-size:16px">
+              <img class="img-rounded" src="figures/jingkaizhang_person.jpg" alt="Generic placeholder image" width="300" height="240">
+        <h3>Jingkai Zhang</h3>
+          <p class="lead">jz544@cornell.edu</p>
+          <p class="lead">Designed the software architecture, implment game GUI/AI, logging, board identification, project code management. </p>
+          </div>
+          <div class="col-md-6" style="font-size:16px">
+              <img class="img-rounded" src="figures/lanyuefang_person.jpg" alt="Generic placeholder image" width="300" height="450">
+              <h3>Lanyue Fang</h3>
+              <p class="lead">lf355@cornell.edu</p>
+              <p>Tested the overall system, wiring & soldering, calibration algorithm design, image processing, step motor control.
+          </div>
+      </div>
+
+    <hr>
+      <div style="font-size:18px">
+          <h2>Budget</h2>
+          <ul>
+              <li>Raspberry Pi Provided in lab</li>
+              <li>Raspberry Pi Camera V2 Provided in lab</li>
+              <li>Suction cups $9.49</li>
+              <li>Air pumps, silicone tubing, ups ground $30.37</li>
+              <!-- <a href="https://www.adafruit.com/product/1463"><li>NeoPixel Ring - $9.95</li></a> -->
+              <li>Wires, Resistors and Frame - Provided in lab</li>
+          </ul>
+          <h3>Total: $60.85</h3>
+      </div>
+      <hr>
+      <div style="font-size:18px">
+          <h2>References</h2>
+          <!-- <a href="https://picamera.readthedocs.io/">PiCamera Document</a><br>
+          <a href="http://www.micropik.com/PDF/SG90Servo.pdf">Tower Pro Servo Datasheet</a><br>
+          <a href="http://getbootstrap.com/">Bootstrap</a><br>
+          <a href="http://abyz.co.uk/rpi/pigpio/">Pigpio Library</a><br>
+          <a href="https://sourceforge.net/p/raspberry-gpio-python/wiki/Home/">R-Pi GPIO Document</a><br> -->
+          [1] “Gomoku,” Wikipedia. Dec. 09, 2021. Accessed: Dec. 14, 2021. [Online]. Available: https://en.wikipedia.org/w/index.php?title=Gomoku&oldid=1059387439
+          <br>
+          [2] “Alpha-beta pruning,” Wikipedia. Oct. 19, 2021. Accessed: Dec. 14, 2021. [Online]. Available: https://en.wikipedia.org/w/index.php?title=Alpha%E2%80%93beta_pruning&oldid=1050683106
+      </div>
+
+    <hr>
+
+      <div class="row" style="font-size:18px">
+              <h2>Code Appendix</h2>
+          <a href="https://github.com/daylightZhang/ECE5725-Final-Project">GoBang implementation</a>
+     
+          <br><br>
+          <br><br>
+          <br><br>  
+      </div>
+
+    </div><!-- /.container -->
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+  </body>
 </html>
